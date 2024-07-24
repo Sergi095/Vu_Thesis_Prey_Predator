@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+import subprocess
 import sys
 
 # Check if GPU is available and set NVIDIA-related requirements
@@ -18,6 +19,8 @@ if 'nvidia' in sys.argv:
         'nvidia-nvjitlink-cu12==12.5.82',
         'nvidia-nvtx-cu12==12.1.105'
     ]
+
+subprocess.run([sys.executable, 'clone_and_install.py'], check=True)
 
 setup(
     name='your_package_name',
@@ -208,9 +211,6 @@ setup(
     ] + extra_requirements,
     setup_requires=[
         'wheel'
-    ],
-    dependency_links=[
-        'git+https://github.com/utiasDSL/gym-pybullet-drones.git#egg=pybullet'
     ],
     exclude_package_data={
         '': ['cfclient'],
