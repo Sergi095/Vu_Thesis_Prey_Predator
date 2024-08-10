@@ -7,7 +7,7 @@ This repository contains a simulation environment for studying predator-prey dyn
 
 This figure shows the repulsion and atraction forces of the proximal control vector, with Attractive Distance Modulation (ADM) and Distance Modulation (DM), which allow the agents to flock.
 
-Explanations can be found at: [Thesis presentation](sergi095.pythonanywhere.com/0)
+Explanations can be found at: [Thesis presentation](https://sergi095.pythonanywhere.com/)
 
 ![Distance Modulation](./images/predator_prey_distance_speed_up.gif "Distance Modulation")
 
