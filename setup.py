@@ -20,7 +20,7 @@ if 'nvidia' in sys.argv:
         'nvidia-nvtx-cu12==12.1.105'
     ]
 
-subprocess.run([sys.executable, 'clone_and_install.py'], check=True)
+#subprocess.run([sys.executable, 'clone_and_install.py'], check=True)
 
 setup(
     name='your_package_name',
